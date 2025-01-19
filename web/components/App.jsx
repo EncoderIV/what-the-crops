@@ -29,17 +29,14 @@ const App = () => {
             </SignedOutOrRedirect>
           }
         />
-        //our addition
-
         <Route
           path="draw-map"
           element={
-            <SignedOutOrRedirect>
+            <SignedInOrRedirect>
               <MapComponent/>
-            </SignedOutOrRedirect>
+            </SignedInOrRedirect>
           }
-
-        />
+        /> 
         <Route
           path="signed-in"
           element={
